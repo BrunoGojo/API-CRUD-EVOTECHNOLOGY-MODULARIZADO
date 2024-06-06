@@ -18,7 +18,7 @@ app.use("/", deleteRoutes);
 
 app.use((err, req, res, next) => {
 	error(err.stack);
-	res.status(500).send("Something broke!");
+	res.status(500).send("Aconteceu um problema no servidor");
 });
 
 app.listen(port, () => {

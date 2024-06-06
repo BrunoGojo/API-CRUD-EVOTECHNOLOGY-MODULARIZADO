@@ -2,6 +2,7 @@ const express = require("express");
 const { error } = require("console");
 const { db } = require("../database");
 const app = express.Router();
+
 // APP DELETE
 
 app.delete("/Usuarios/:Cpf_usuario", (req, res) =>{
